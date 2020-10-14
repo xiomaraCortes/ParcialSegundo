@@ -110,7 +110,7 @@
   }
   
   .container--pall {
-    padding-top: 4.375rem;
+    padding-top: 1.375rem;
     padding-bottom: 4.375rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -118,7 +118,7 @@
   
   @media (min-width: 64em) {
     .container--pall {
-      padding-top: 6rem;
+      padding-top: 1rem;
       padding-bottom: 6rem;
     }
   }
@@ -173,6 +173,7 @@
   }
   
   h1, h2, h3 {
+    
     margin-top: 0px;
     line-height: 1.15;
     font-weight: 300;
@@ -180,6 +181,66 @@
   }
   
   h1 {
+    width: 80vw;
+    margin-top: 20%;
     margin-bottom: 1.5rem;
     font-size: 2.31rem;
   }
+  p{
+    width:75vmin;
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color:white;
+}
+.nav-list{
+    display: flex;
+    margin-right: 2rem;
+}
+.nav-list a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none !important;
+    color: gray !important;
+}
+
+a:hover{
+  color: black !important;
+  border-bottom: 5px solid transparent; 
+  border-image: linear-gradient(to right, #32D262 0%, #2DBCCC 100%) 1;
+}
+
+ul {
+  list-style: none;
+}
+.header__logo{
+  border-bottom: none !important;
+  margin-left: -340px;
+}
+.Request{
+  background: linear-gradient(to right,#32D262, #2DBCCC) !important;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 190px;
+  margin-right: -316px;
+  color: white;
+}
+.welcome-section{ background-color: #FAFAFA;}
+.About{background-color:#F4F5F7;}
+.Blog{background-color:#FAFAFA}
+.Contact-Us{background-color:#2D314E}
+
+
+
