@@ -30,27 +30,34 @@
         <span></span>
       </a>
       <div class="header__links hide-for-mobile">
-        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
+        <a href="#welcome-section">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact-Us">Contact</a>
+        <a href="#Blog">Blog</a>
+        <a href="#">Careers</a>
       </div>
       <a href="#" class="button hide-for-mobile">Request Invite</a>
     </nav>  
     <div class="header__menu has-fade">
-      <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
+      <a href="#">Home</a><a href="#">About</a>
+      <a href="#">Contact</a><a href="#">Blog</a>
+      <a href="#">Careers</a>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
+  <section id="welcome-section" class="welcome-section">
+   <div class="container"> 
       <div class="hero__image"></div>
       <div class="hero__text container--pall">
         <h1>Next generation digital banking</h1>
         <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+        <!-- <div align="right"><img style="margin-right: -275px;    margin-top: -40px;" src="images/image-mockups.png"></div> -->
         <a class="button" href="#">Request Invite</a>
       </div>
     </div>
   </section>
 
-  <section class="feature">
+  <section id="About" class="About" >
     <div class="feature__content container container--pall">
       <div class="feature__intro">
         <h2>Why choose Easybank?</h2>
@@ -59,7 +66,6 @@
       </div>
       
       <div class="feature__grid">
-  
         <div class="feature__item">
           <div class="feature__icon"><img src="/images/icon-online.svg">
           </div>
@@ -101,17 +107,11 @@
         </div>
       </div>
     </div>
-    
-    
-    
   </section>
 
-  <section class="articles">
-
+  <section id="Blog" class="Blog">
     <div class="article__content container container--pall">
-
       <h2>Latest Articles</h2> 
-
       <div class="article__grid">
 
         <a href="#" class="article__item">
@@ -167,8 +167,8 @@
     </div>
 
   </section>
-
-  <footer class="footer">
+<section id="Contact-Us" class="Contact-Us">
+  <footer  class="footer">
     <div class="container">
       <a class="footer__logo" href="#">
         <img src="/images/logo_dark.svg" alt="logo">
@@ -198,21 +198,21 @@
         <div class="footer__copyright">
           &copy; Easybank. All Rights Reserved.
         </div>
-  
       </div>
     </div>
 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Angie Rojas, Xiomara Cortes</a>.
+    </div>
+    <script src="js/script.js"></script>
+
   </footer>
+</section>
+  
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Angie Rojas, Xiomara Cortes</a>.
-  </div>
-  <script src="js/script.js"></script>
+  
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 <body>
     
 
