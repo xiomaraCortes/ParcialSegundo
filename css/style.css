@@ -272,9 +272,4 @@ button:hover::before, .button:hover::before {
   }
 }
 
-@media (min-width: 64em) {
-  .hide-for-desktop {
-    display: none;
-  }
-}
 
