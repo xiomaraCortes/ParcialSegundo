@@ -579,4 +579,23 @@ button:hover::before, .button:hover::before {
       grid-template-columns: 1fr;
   gap: 1.875rem;
 }
+@media (min-width: 40em) {
+  .article__grid {
+    -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+.article__item {
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  background-color: white;
+  /*-webkit-box-shadow*/
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+/*3D Articulos*/
+.article__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 
