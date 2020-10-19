@@ -207,6 +207,7 @@ p {
   margin-bottom: 2.25rem;
 }
 
+/*FLEX setup*/
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +389,7 @@ button:hover::before, .button:hover::before {
   background-color: #fafafa;
 }
 
+/*Flexbox container hero*/
 @media (min-width: 64em) {
   .hero .container {
     display: -webkit-box;
@@ -419,7 +421,7 @@ button:hover::before, .button:hover::before {
   .hero__image {
     -webkit-box-flex: 3;
         -ms-flex: 3;
-            flex: 3;
+            flex: 3; /*flex-grow*/
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -479,7 +481,7 @@ button:hover::before, .button:hover::before {
   .hero__text {
     -webkit-box-flex: 2;
         -ms-flex: 2;
-            flex: 2;
+            flex: 2; /*flex-grow*/
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -525,7 +527,7 @@ button:hover::before, .button:hover::before {
   .feature__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+            flex: 0 0 50%; /*Tres valores: flex-grow | flex-shrink | flex-basis*/
   }
 }
 
@@ -533,7 +535,7 @@ button:hover::before, .button:hover::before {
   .feature__item {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
+            flex: 1; /*Un valor, número sin unidades: flex-grow*/
   }
 }
 
@@ -574,21 +576,21 @@ button:hover::before, .button:hover::before {
 
 .article__grid {
   display: -ms-grid;
-  display: grid;
+  display: grid; /*property to grid*/
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr;/*agregar columna de 1u*/
   gap: 1.875rem;
 }
 @media (min-width: 40em) {
   .article__grid {
     -ms-grid-columns: (1fr);
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /*1fr 1fr*/
   }
 }
 @media (min-width: 64em) {
   .article__grid {
     -ms-grid-columns: (1fr);
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /*1fr 1fr 1fr 1fr*/
   }
 }
 
@@ -639,6 +641,7 @@ button:hover::before, .button:hover::before {
   font-size: 0.8125rem;
 }
 
+  /*FOOTER*/
 .footer {
   background-color: #2d314d;
   color: white;
@@ -646,18 +649,18 @@ button:hover::before, .button:hover::before {
   text-align: center;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 64em) { /*Mas de 400px*/
   .footer .container {
     display: -ms-grid;
-    display: grid;
+    display: grid;/*property to grid*/
     -ms-grid-columns: 2fr 1fr 1fr 3fr;
-        grid-template-columns: 2fr 1fr 1fr 3fr;
+        grid-template-columns: 2fr 1fr 1fr 3fr; /*agregar columna de 4u*/
     gap: 1rem;
     -ms-grid-rows: 1fr auto;
-        grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta"
- "social links1 links2 cta";
-    justify-items: start;
+        grid-template-rows: 1fr auto; /*rows property*/
+        grid-template-areas: "logo links1 links2 cta" 
+                              "social links1 links2 cta"; /*agrupar celdas de cuadrícula en un área y darle un nombre*/
+    justify-items: start; /*alineacion todos los elementos horizontalmente*/
   }
 }
 
@@ -665,13 +668,14 @@ button:hover::before, .button:hover::before {
   color: white;
 }
 
+/*MARGIN LOGO FOOTER*/
 .footer__logo img {
   margin-bottom: 1.875rem;
 }
 
 @media (min-width: 64em) {
   .footer__logo {
-    grid-area: logo;
+    grid-area: logo; /*Logo vaya en el footer*/
   }
 }
 
@@ -680,7 +684,7 @@ button:hover::before, .button:hover::before {
     margin-bottom: 1.875rem;
   }
 }
-
+/*Especio redes-footer*/
 .footer__social a {
   display: inline-block;
 }
@@ -700,13 +704,13 @@ button:hover::before, .button:hover::before {
 
 @media (min-width: 64em) {
   .footer__social {
-    grid-area: social;
+    grid-area: social; /*social vaya en el footer*/
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
-        align-self: end;
+        align-self: end; /*Alineacion del elemento con la clase verticalmente en el end.*/
   }
 }
-
+/*LIST EN FOOTER*/
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
